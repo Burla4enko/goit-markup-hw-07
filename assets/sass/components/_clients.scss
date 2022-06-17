@@ -1,0 +1,46 @@
+.clients__list {
+    display: flex;
+}
+
+.cliets__item {
+    width: calc((100% - 150px) / 6);
+    height: 92px;
+
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+
+    transition: border-color $transition-prop;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+
+    color: $icon-color;
+
+    transition: color $transition-prop;
+
+    &:hover,
+    &:focus {
+        color: $accent-color;
+    }
+}
+
+.cliets__item + .cliets__item {
+    margin-left: 30px;
+}
+
+.clients__icon {
+    display: block;
+    margin: 0 auto;
+
+    fill: currentColor;
+}
